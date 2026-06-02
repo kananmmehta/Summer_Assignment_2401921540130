@@ -1,4 +1,4 @@
-//1.Two Sum
+#1.Two Sum
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         num_to_index = {}
@@ -8,7 +8,7 @@ class Solution:
                 return [num_to_index[complement], i]
             num_to_index[num] = i
 
-//2.Remove Duplicates from Sorted Array
+#2.Remove Duplicates from Sorted Array
 class Solution:
     def removeDuplicates(self, nums: list[int]) -> int:
         if not nums:
@@ -20,7 +20,7 @@ class Solution:
                 nums[i] = nums[j]
         return i + 1
 
-//3.Best Time to Buy and Sell Stoc
+#3.Best Time to Buy and Sell Stoc
 class Solution:
     def maxProfit(self, prices: list[int]) -> int:
         min_price = float('inf')
